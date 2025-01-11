@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Doors Co.</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Navigation bar styling */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 2em;
+            max-width: 800px; /* Center content within a fixed width */
+        }
+
+        section {
+            margin-bottom: 2em;
+            text-align: center; /* Center-align text content */
+        }
+
+        /* Product list styling */
+        .product-list {
+            display: flex;
+            justify-content: center; /* Center products in the container */
+            gap: 2em;
+            flex-wrap: wrap; /* Wrap products to new lines if needed */
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1em;
+            text-align: center;
+            width: 300px; /* Fixed width for uniform product boxes */
+        }
+
+        .product h3 {
+            margin-top: 0;
+        }
+
+        .product button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Website header -->
+    <header>
+        <div class="logo">
+            <h1>Fake Doors Co.</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About section -->
+        <section id="about">
+            <h2>Welcome to Fake Doors Co.</h2>
+            <p>Your one-stop shop for doors that lead nowhere! Need a door to spice up your room or confuse your guests? We’ve got you covered.</p>
+        </section>
+
+        <!-- FAKE DOORS CEO Joey "The Door Guy" D'Amico SECTION -->
+        <section id="fake-doors-al">
+            <h2>Meet Fake Doors CEO Joey "The Door Guy" D'Amico </h2>
+            <!-- Absolute Path to the Fake Doors Al Image -->
+            <img src="C:\Users\melan\Documents\Code Projects\Fake Doors Site\images\Fake Doors CEO.png" alt="Fake Doors Al - Spokesperson and CEO" style="max-width: 100%; border-radius: 5px;">
+            <p>Joey "The Door Guy" D'Amico is the face of Fake Doors Co., bringing you the best in doors that lead nowhere. Trust his smile—he’s got all the answers!</p>
+        </section>
+
+        <!-- Products section -->
+        <section id="products">
+            <h2>Our Fake Doors</h2>
+            <div class="product-list">
+                <!-- Link to Classic Fake Door Page -->
+                <div class="product">
+                    <h3>Classic Fake Door</h3>
+                    <p>The timeless fake door that blends seamlessly into any wall.</p>
+                    <!-- Absolute Path to Classic Fake Door Page -->
+                    <button onclick="location.href='C:\\Users\\melan\\Documents\\Code Projects\\Fake Doors Site\\pages\\Classic Fake Doors Learn More Page HTML.html'">Learn More</button>
+                </div>
+
+                <!-- Link to Invisible Fake Door Page -->
+                <div class="product">
+                    <h3>Invisible Fake Door</h3>
+                    <p>A fake door so realistic, you won't believe it's not real!</p>
+                    <!-- Absolute Path to Invisible Fake Door Page -->
+                    <button onclick="location.href='C:\\Users\\melan\\Documents\\Code Projects\\Fake Doors Site\\pages\\Invisible Fake Doors page Outline.html'">Learn More</button>
+                </div>
+
+                <!-- Link to Luxury Fake Door Page -->
+                <div class="product">
+                    <h3>Luxury Fake Door</h3>
+                    <p>For those who want a fake door with a touch of elegance.</p>
+                    <!-- Absolute Path to Luxury Fake Door Page -->
+                    <button onclick="location.href='C:\\Users\\melan\\Documents\\Code Projects\\Fake Doors Site\\pages\\Luxury Fake Doors Page Outline.html'">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section Currently using Python Flask but Could be Swapped for PHP script-->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Want to learn more about our fake doors? Reach out!</p>
+            <form action="/submit_contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fake Doors Co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
